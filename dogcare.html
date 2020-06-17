@@ -4,76 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styledogcare.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/images">
     <title>The Cocker Hub</title>
 
 </head>
-<body>
-    <header class="d-sm-flex justify-content-between">    
+<body class="dogcare">
+    <header class="d-sm-flex justify-content-center">    
         <a href="index.html" class="title col-auto">
             <h1><i class="fas fa-paw"></i>The Cocker Hub<i class="fas fa-paw"></i></h1>
         </a>
-        <nav class="col-auto d-sm-flex align-items-center menu">
-            <ul class="row">
-                <li class="col-sm-auto">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li class="col-sm-auto">
-                    <a href="dogcare.html" class="active">Dog Care</a>
-                </li>
-
-                <li class="col-sm-auto">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>    
     </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section id="dogcarepage-outer">
-        <div id="dogcarepage-image"></div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="dogcare.html">Dog Care</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="main-outer">
+        <div id="main-image"></div>
     </section>
-    <section>
+       
+    <section class="intro mb-4 pt-5 pb-5">
         <div class="container d-flex justify-content-center">
             <div class="col-sm text-center">
-                <h2 class="text-center">How to look after your dog</h2>
+                <h2>How to look after your dog</h2>
                 <p>Owning a dog, whether it be your first time or you've always had family dogs, is a fun and rewarding
                 experience. However, it is no easy task, especially owning an English Cocker Spaniel. This page is here to provide
                 you with advice, tips and tricks when it comes to owning an English Cocker Spaniel, however this can be transferred to 
                 most breeds if you're here for general knowledge!</p>
             </div>
         </div>
+    </section>
 
+    <section>
         <div class="container">
               <div class="row justify-content-center">
-                <div class="col-sm text-center">
-                    <h3>Care</h3>
+                <div class="col-sm m-3">
+                    <h3 class="mt-4">Care</h3>
                     <p>English Cocker Spaniels are energetic and lively dogs best suited to an active family with plenty of time for long walks and playing. 
                     They are intelligent and gentle natured animals, therefore easy to train and extremely friendly provided they are socialised early on amongst both other dogs
                     and people. Cocker Spaniels prefer to be in company all of the time and if left to their own devices for too long, will resort to having to entertain themselves -
-                    which could involve your socks or slippers making an appearance in their bed. Ensure that if your household does not have a person present throughout the entire day,
+                    which could involve your socks or slippers making an appearance in their bed.</p><p>Ensure that if your household does not have a person present throughout the entire day,
                     that your Cocker is either crate trained from a puppy or that someone is present throughout various points during the day to spend time with them and let them out for
                     regular toilet breaks. Crate training is a fantadtic way to build both a safe place for your dog to retreat to and independance in your dog to avoid social anxiety,
                     which Cockers are renowned for!</p>
-                    <h3>Cocker Spaniels and Barking</h3>
+                    <h3 class="mt-4">Cocker Spaniels and Barking</h3>
                     <p>Cocker Spaniels, as with any dog breed, like to vocalise and how much they vocalise will depend upon their personality. Cockers are known to enjoy the sound of their
                     own voice, so if they are bored or feeling lonely, are very likely to let you know. Again, crate training is extremely useful in making your dog independant and therefore 
                     less likely to bark when left alone for prolonged periods of time.</p>
                 </div>
-                <div class="col-sm text-center">
-                    <h3>Food</h3>
+                <div class="col-sm m-3">
+                    <h3 class="mt-4">Food</h3>
                     <p>Your Cocker Spaniels diet will depend upon their age and if they are sensitive to anything from a puppy. They will need a complete, balanced diet in order to keep them lean
                     and healthy. You may find your dogs stools are loose, if this is the case then they will need a dog food talored to a sensitive stomach, usually containing pre-biotics. Weigh
-                    your dog regularly in order to adjust the amount of food your dog has. From a puppy this usually starts as small handfuls 3/4 times throughout the day, then based on their weight
+                    your dog regularly in order to adjust the amount of food your dog has.</p><p>From a puppy this usually starts as small handfuls 3/4 times throughout the day, then based on their weight
                     reducing to 3, then 2 main meals. Treats should not make up more than 10% of their diet as this can cause unbalance and ultimate your dog will gain weight. Try to feed your dog
                     around the same time each day in order to build a routine.</p>
-                    <h3>Exercise</h3>
+                    <h3 class="mt-4">Exercise</h3>
                     <p>As mentioned before, Cocker Spaniels are energetic and lively. Despite their small size they need a good amount of daily exercise to keep them both mentally and physically healthy.
                     Expect to take your Cocker out at least 2 times a day for a minimum of an hour. However, if you happen to have a working cocker, they will need longer walks as they are more energetic
-                    than the show type. Cocker Spaniels enjoy lots of play time and off-lead exercise, provided it is in a secure area, is a great way to allow your dog to burn off their excess energy. 
+                    than the show type.</p><p>Cocker Spaniels enjoy lots of play time and off-lead exercise, provided it is in a secure area, is a great way to allow your dog to burn off their excess energy. 
                     This is where provided training during your walking sessions will be extremely benefitial as it will allow you to both build a bond and challenge them mentally.</p> 
                 </div>
             </div>
