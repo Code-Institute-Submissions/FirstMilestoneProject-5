@@ -66,6 +66,10 @@ to also match the over all colour scheme of the page.</li>
 <li>Page was inspected in order to view on various devices and ensure hamburger menu was working.</li>
 <li>Friends were asked to view the page to ensure it worked.</li>
 
+<h2>Bugs</h2>
+<p>In my original navbar layout, which was seperated via a justify-content-between container to add spacing between the title and the menu items, had an issue where on mobile devices the hover affect would overlap with the text beneath. 
+This was fixed when i changed the navbar completely to a responsive one within bootstrap.</p>
+
 <h2>Deployment</h2>
 <p>The project was deployed to Github pages following the below steps:
 <li>Log in to GitHub and locate the GitHub Repository</li>
